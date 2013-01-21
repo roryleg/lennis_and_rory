@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LennisAndRory</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+         
+          <nav>
+            <ul class="nav pull-center">
+				<li><%= link_to "Overview", root_path %></li>
+				<li><%= link_to "Venue", venue_path %></li>
+				<li><%= link_to "Where To Stay", where_to_stay_path %></li>
+				<li><%= link_to "Travel Advice", travel_path %></li>
+				<li><%= link_to "Local Activities", local_activities_path %></li>
+                <li><%= link_to "Some Favorite Pics", pics_path %></li>
+				<li><%= link_to "Registry Info", registry_path %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+<%= yield %>
+
+</body>
+</html>

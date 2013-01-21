@@ -1,0 +1,11 @@
+$bodyBackground: #3A87AD;
+$navbarLinkColorHover: #00FF00;
+$heroUnitBackground: #FFFFFF;
+@import "bootstrap";
+
+menu a {
+color: #00BFFF;
+}
+menu a:hover {
+color: #40FF00;
+}
